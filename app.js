@@ -30,7 +30,7 @@ io.on("connection",function(socket){
 			console.log("Received " + key + " from frontend");
 			
 			//************************
-			io.sockets.emit("message","key")
+			io.sockets.emit("message",key)
 			//fill in a method "io.sockets.emit(param1,param2)" in line 35
 			//The first parameter is the data type "message", the second parameter is the data you want to send
 					
